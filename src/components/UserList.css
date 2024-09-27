@@ -1,0 +1,41 @@
+.user-list {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+.user-list h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+  
+.user-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-list li {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.user-list li.selected {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.user-list li.selected:hover {
+  background-color: #007bff;
+}
+
+.user-list li:hover {
+    background-color: #f0f0f0;
+}
+  

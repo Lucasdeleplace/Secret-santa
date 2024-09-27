@@ -1,0 +1,36 @@
+.add-suggestion {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .add-suggestion h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .add-suggestion input, .add-suggestion textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .add-suggestion button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-suggestion button:hover {
+    background-color: #0056b3;
+  }
+  

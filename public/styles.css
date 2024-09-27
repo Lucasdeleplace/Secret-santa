@@ -1,0 +1,122 @@
+/* styles.css */
+
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Un fond léger */
+  }
+  
+  /* Header */
+  .header {
+    background: #007bff;
+    color: white;
+    padding: 1.5rem;  /* Un peu plus d'espace pour les écrans larges */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajouter une légère ombre */
+  }
+  
+  /* Formulaires */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  
+  /* Liste des utilisateurs et suggestions */
+  .user-list, .gift-suggestions {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white; /* Fond blanc pour le contraste */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+  }
+  
+  /* Mobile styles */
+  .user-list ul, .gift-suggestions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Styles pour les écrans plus larges */
+  @media (min-width: 600px) {
+    .user-list, .gift-suggestions {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .user-list ul, .gift-suggestions ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; /* Pour une meilleure répartition */
+      width: 100%;
+      flex-wrap: wrap; /* Pour éviter le débordement */
+    }
+  
+    .user-list li, .gift-suggestions li {
+      margin: 0.5rem; /* Espacement entre les éléments */
+      flex: 1 1 30%; /* Les éléments prennent 30% de largeur, adaptent sur l'écran */
+      min-width: 200px; /* Largeur minimale pour les éléments */
+      padding: 1rem; /* Espacement interne */
+      background: #e9ecef; /* Couleur de fond douce pour les éléments */
+      border-radius: 8px; /* Coins arrondis */
+      text-align: center; /* Centrer le texte */
+    }
+  
+    .header h1 {
+      font-size: 2.5rem; /* Taille du titre plus grande sur PC */
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Largeur maximale pour la mise en page */
+    margin: 0 auto; /* Centrer le conteneur */
+    padding: 1rem;
+  }
+  
+  .card {
+    flex: 1 1 300px; /* Les cartes s'ajustent avec une largeur minimale */
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+
+  input, button {
+    padding: 0.8rem;
+    font-size: 1rem; /* Assure-toi que le texte est lisible */
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button {
+    background-color: #007bff; /* Couleur du bouton */
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Couleur au survol */
+  }
+
+  h1, h2 {
+    margin: 1rem 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  p {
+    line-height: 1.5; /* Pour un meilleur espacement des lignes */
+    margin: 0.5rem 0; /* Espacement entre les paragraphes */
+  }
+  
