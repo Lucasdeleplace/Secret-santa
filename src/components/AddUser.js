@@ -9,8 +9,8 @@ const AddUser = ({ onUserAdded }) => {
     e.preventDefault();
     if (name.trim()) {
       await addUser({ name });
-      setName('');  // Réinitialiser le champ après l'ajout
-      onUserAdded();  // Appeler la fonction pour mettre à jour la liste
+      setName('');
+      onUserAdded();
     }
   };
 
